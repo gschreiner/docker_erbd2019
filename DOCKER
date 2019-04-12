@@ -1,0 +1,7 @@
+Comandos docker
+
+docker run -d -P -e HOST_COUNT=3 -e HOSTS=node1,node2,node3 --name=node1 -v /home/USUARIO/deployment.xml:/tmp/deployment.xml --network=voltLocalCluster voltdb/voltdb-community:8.1
+
+docker run -d -P -e HOST_COUNT=3 -e HOSTS=node1,node2,node3 --name=node2 -v /home/USUARIO/deployment.xml:/tmp/deployment.xml --network=voltLocalCluster voltdb/voltdb-community:8.1
+
+docker run -d -P -e HOST_COUNT=3 -e HOSTS=node1,node2,node3 --name=node3 -v /home/USUARIO/deployment.xml:/tmp/deployment.xml --network=voltLocalCluster voltdb/voltdb-community:8.1
